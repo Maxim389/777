@@ -1,0 +1,143 @@
+/*
+Author : Onextrapixel
+URL: http://www.onextrapixel.com
+*/
+
+* {
+	border:none; 
+	margin:0; 
+	padding:0;
+}
+
+body {
+	background:#fff; 
+	color: #000; 
+	font:12.35px "Lucida Grande", Georgia, Arial, Verdana, sans-serif;
+}
+
+a:link, a:visited {
+	color:#000;
+	text-decoration:none; 
+}
+
+h1 {
+	font-size:20px;
+	margin-bottom:20px; 
+}
+
+h2 {
+	font-size:15px;
+	margin-bottom:40px;
+}
+
+p {
+	margin:10px 0;
+}
+
+#wrap {
+	margin:10px auto;
+	width:900px; 
+}
+
+#header {
+	margin-bottom:50px;
+}
+
+#header a {
+	color:#0054A6;
+}
+
+#header a:hover {
+	text-decoration:underline;
+}
+
+/************************************************
+      GENERAL PROPERTIES FOR EXAMPLE 1 & 2 
+************************************************/
+
+#example1, #example2 {
+	position:relative;
+	height:150px;
+}
+
+#menu1, #menu2 {
+	height:30px;
+	border-bottom:1px solid #959595;
+}
+
+#menu1 li, #menu2 li {
+	display:inline;
+}
+
+/************************************************
+ CREATING CSS HALF ROUNDED BUTTON FOR BOTH EXAMPLE
+************************************************/
+#menu1 li a, #menu2 li a  {
+	background:transparent url(images/button.jpg) no-repeat top left;
+    display:block;
+    float:left;
+    height:31px;
+    margin-right:15px;
+}
+
+#menu1 li a .button, #menu2 li a .button {
+	background:transparent url(images/button.jpg) no-repeat top right;
+    display:inline;
+    float:left;
+    height:21px;
+    padding:10px 10px 0 0;
+    margin-left:12px;
+    cursor:pointer;
+}
+
+#menu1 li a:hover, #menu2 li a:hover {
+	background-position:0px bottom;
+	color:#fff;
+}
+
+#menu1 li a:hover .button, #menu2 li a:hover .button {
+	background-position:right bottom;
+}
+
+/************************************************
+         EXAMPLE 1 - SINGLE REMOTE AREA
+************************************************/
+#menu1 a .text {
+	display:none;
+} 
+
+#menu1 a:hover .text {
+	display:block;
+	position:absolute;
+	height:20px;
+	top:30px;
+	left:0px;
+	color:#000;
+	font-size:11px;
+}
+
+/************************************************
+         EXAMPLE 2 - MULTIPLE REMOTE AREAS
+************************************************/
+#menu2 a .text, #menu2 a .icon {
+	display:none;
+}
+
+#menu2 a:hover .text {
+	display:block;
+	position:absolute;
+	height:20px;
+	top:30px;
+	left:0px;
+	color:#000;
+	font-size:11px;
+}
+
+#menu2 a:hover .icon {
+	display:block;
+	position:absolute;
+	height:20px;
+	top:180px;
+	left:350px;
+}
+

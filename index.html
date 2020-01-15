@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+	
+	<title>Using Pure CSS Rollover To Display Element At Remote Areas - Onextrapixel</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		.row.content {height: 1500px}
+		.sidenav {
+			background-color: #f2f2f2;
+			height: 100%;
+		}
+		footer {
+			background-color: #545;
+			color: white;
+			padding: 16px;
+		}
+		@media screen and (max-width: 767px) {
+			.sidenav {
+				height: auto;
+				padding: 16px;
+			}
+			.row.content {height: auto;}
+		}
+		.layer2 /* Стиль основного текста */
+		{
+			box-shadow: 7px 7px 5px rgba(0,0,0,0.6); /* Тень */
+			border-radius: 20px; /* Радиус скругления */
+			background: #dcdcdc;/* Цвет фона */
+			padding: 10px; /* Поля вокруг текста */
+			margin: 10px;
+
+		}
+		.wrapper {
+			position: relative;
+			padding-top: 56.25%; /* 16:9 Aspect Ratio */
+		}
+
+		.container_2 {
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			transform: rotate(90deg);
+		}
+
+
+
+	</style>
+</head>
+
+<body>
+<div class = "col-sm-9 col-md-pull-1">
+	<div id="wrap">
+		
+		<div id="header">
+		<div id="example2">
+			<ul id="menu2">
+				<li><a href="#">
+						<span class="button">Home</span>
+						<span class="text">Back to homepage</span>
+						<span class="icon"><img src="images/home.jpg" alt="Home" /></span>
+					</a>
+				</li>
+				<li><a href="#">
+						<span class="button">About Us</span>
+						<span class="text">More about our team</span>
+						<span class="icon"><img src="images/aboutus.jpg" alt="About Us" /></span>
+					</a>
+				</li>
+				<li><a href="#">
+						<span class="button">Services</span>
+						<span class="text">See what are we good at</span>
+						<span class="icon"><img src="images/service.jpg" alt="Services" /></span>
+					</a>
+				</li>
+				<li><a href="#">
+						<span class="button">Portfolio</span>
+						<span class="text">What have we done</span>
+						<span class="icon"><img src="images/portfolio.jpg" alt="Portfolio" /></span>
+					</a>
+				</li>
+				<li><a href="#">
+						<span class="button">Contact Us</span>
+						<span class="text">Let us hear from you</span>
+						<span class="icon"><img src="images/contactus.jpg" alt="Contact Us" /></span>
+					</a>
+				</li>
+			</ul>	
+		</div>
+
+	</div>
+
+		<div class="container-fluid">
+			<div class="row content">
+
+				<header>
+					<h1 align="left"> <font color="orange">
+						Java mobile</h1>
+				</header>
+				<font color="black">
+
+
+
+						<div class="layer2">
+
+
+								<img src="lol.jpg" width="350" height="250" alt="Фотография 1" >
+
+
+								<img src="12.jpg" width="350" height="250" alt="Фотография 2" >
+
+							<article>
+								<p align="justify">Java представляет собой язык программирования и платформу вычислений, которая была впервые выпущена Sun Microsystems в 1995 г. Существует множество приложений и веб-сайтов, которые не работают при отсутствии установленной Java, и с каждым днем число таких веб-сайтов и приложений увеличивается. Java отличается быстротой, высоким уровнем защиты и надежностью. От портативных компьютеров до центров данных, от игровых консолей до суперкомпьютеров, используемых для научных разработок, от сотовых телефонов до сети Интернет — Java повсюду!</p>
+								<p>Ссылка на википедию.
+									<a href="https://ru.wikipedia.org/wiki/Java"> Wikipedia </a>
+								<div class="a">
+									<div class="s6">
+										<div class="s6:hover">
+											<a href="1.html"> Подробнее </a>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+			</div>
+</body>
+</html>
